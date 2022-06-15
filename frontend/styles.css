@@ -1,0 +1,138 @@
+body {
+    background-color: rgba(0, 0, 0, 0.09);
+    text-align: center;
+}
+
+input, select {
+    outline: none;
+    height: 20px;
+    padding: none;
+}
+
+#titulo_pagina {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#busca {
+    background-color: rgba(128, 128, 128, 0.3);
+    height: 4vh;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#nome_deputado,
+#meses,
+#anos {
+    font-size: 16px;
+    justify-content: center;
+}
+
+label {
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+label:not(:first-child) {
+    margin-left: 10px;
+}
+
+#meses,
+#anos {
+    height: 28px;
+}
+
+#meses {
+    width: 110px;
+}
+
+#anos {
+    width: 86px;
+}
+
+
+#meses option {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+#btn_buscar {
+    font-size: 16px;
+    width: 100px;
+    padding: 4px;
+    background-color: black;
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+#btn_buscar:hover {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#exibe_resultados,
+#mensagem {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+#exibe_resultados {
+    padding-top: 4px;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+#mensagem {
+    margin-top: 2rem;
+    font-size: 24px;
+}
+
+table {
+    display: inline-block;
+    padding: 10px;
+    border: none !important;
+}
+
+table,
+table th,
+table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 4px 10px;
+}
+
+table th {
+    padding: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+table td {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fff;
+}
+
+/* --- Media queries --- */
+@media screen and (max-width: 850px) {
+    #busca {
+        height: 8vh;
+    }
+    #btn_buscar {
+        margin-top: 6px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #btn_buscar {
+        margin-left: 20px !important;
+    }
+    table td {
+        padding: 3px 12px;
+    }
+}

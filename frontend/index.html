@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Despesas de Gabinete - Alesp</title>
+</head>
+<body>
+    <div id="page_header">
+        <h1 id="titulo_pagina">Despesas de Gabinete - Alesp</h1>
+    </div>
+
+    <div id="busca">
+
+        <label for="nome_deputado">Nome Deputado(a)</label>
+        <input type="text" id="nome_deputado" />
+
+        <label for="meses">Mês</label>
+        <select id="meses">
+            <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+        </select>
+
+        <label for="anos">Ano</label>
+        <select id="anos"></select>
+
+        <button id="btn_buscar">Pesquisar</button>
+    </div>
+
+    <div id="exibe_resultados">
+        <div id="mensagem"></div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
